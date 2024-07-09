@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Deccription" content="Student Registration System">
+    <link rel="icon" type="image/x-icon" href="./assets/school.png">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <!--Header Section-->
+    <Header class="header">
+        <h1>STUDENT REGISTRATION SYSTEM</h1>
+        <p>Register Student details and Update the Records</p>
+    </Header>
+
+    <!--main Section-->
+    <main class="main">
+        
+        <!--Registration Section-->
+        <Section class="Registration-Section" id="Registration-Section">
+            <form id="StudentForm" class="StudentForm">
+                <h2>NEW STUDENT DETAILS</h2>
+
+                <label for="StudentName" class="StudentLabel">Student Name:</label>
+                <input type="text" id="StudentName" name="StudentName" class="StudentInput" required>
+
+                <label for="StudentId" class="StudentLabel">Student Id:</label>
+                <input type="number" id="StudentId" name="StudentId" class="StudentInput" required>
+
+                <label for="StudentClass" class="StudentLabel">Class:</label>
+                <input type="text" id="StudentClass" name="StudentClass" class="StudentInput" required>
+
+                <label for="StudentAddress" class="StudentLabel">Address:</label>
+                <input type="text" id="StudentAddress" name="StudentAddress" class="StudentInput" required>
+
+                <label for="StudentEmail" class="StudentLabel">Email-Id:</label>
+                <input type="email" id="StudentEmail" name="StudentEmail-Id" class="StudentInput" required>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                <label for="StudentContact" class="StudentLabel">Contact No:</label>
+                <input type="tel"  maxlength="10" minlength="10" id="StudentContact" name="StudentContact-No" class="StudentInput" pattern="\d{10}" title="Please enter exactly 10 digits" required>
+            
+                <div id="button">
+                <button type="submit" id="submit-button">Submit</button>
+                <button type="submit" id="update-button">Update</button>
+                </div> 
+
+            </form>
+        </Section>
+        <!--Student Records-->
+        <section class="Record-Section" id="Record-Section">
+            <h3><u>STUDENT RECORDS</u></h1>
+            <div id="container">
+            <table class="Student-Table" id="Student-Table">
+                <thead>
+                    
+                    <tr>
+                        <th>NAME</th>
+                        <th>ID</th>
+                        <th>CLASS</th>
+                        <th>ADDRESS</th>
+                        <th>EMAIL-ID</th>
+                        <th>CONTACT-NO</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                
+                <tbody class="TableBody" id="TableBody">
+                  <!--Student Records in Table-->
+                </tbody>
+            
+            </table>
+        </div>
+        </section>
+    </main> 
+<!--footer-->
+<footer>
+    <div class="links">
+    <div class="link1">
+    <a href="https://wa.me/8884695310" class="fa fa-whatsapp"><img src="./assets/whatsapp (1).png" alt="whatsapp" width="50px" height="50px"/></a>
+   </div>
+   <div class="link2">
+   <a href="https://www.gmail.com" class="fa fa-gmail"><img src="./assets/gmail.png" alt="gmail" width="50px" height="50px"/></a>
+   </div>
+   </div>   
+   <div>
+    <span>Copyright &copy2024 Student Registration System</span>
+    </div>
+</footer> 
+
+<!--JavaScript Code link-->
+<Script src="script.js" defer></Script>
+</body>
+
+</html>

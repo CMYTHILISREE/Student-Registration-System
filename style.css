@@ -1,0 +1,274 @@
+/* universal */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background:url(./assets/background.jpeg);  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+            
+}
+/* Header Section */
+
+header {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+    position: relative;
+}
+h1:hover{
+    transform: scale(1.3);
+}
+p{
+  animation: Student 7s linear 0s 3;
+}
+/* animation Section */
+@keyframes Student{
+  0% {
+      transform: translate(0,0);
+      
+    }
+    50% {
+      transform: translate(-250px,0);
+      
+    }
+    100%{
+      transform:translate(250px,0);
+      
+    }
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+}
+/* Registration Form Section */
+
+#Registration-Section {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    color:black;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#StudentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.StudentLabel{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.StudentInput{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px; 
+}
+h2{
+    animation: h2 10s linear infinite ; 
+    text-align: center; 
+}
+@keyframes h2{
+    0% {
+        color:#000000b5;
+      }
+      50% {
+        color:rgb(238, 5, 230);
+      }
+      75%{
+        color:rgb(238, 5, 230);
+      }
+      100%{
+        color:#000000b5;
+      }
+}
+button{
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif; 
+    cursor: pointer;
+    font-weight: bold; 
+    padding: 10px 15PX;
+    background-color:#000000b5;
+    color: white;
+}
+#button{
+   align-self: center;
+   padding-top: 10PX;
+}
+button:hover{
+    background-color: rgb(93, 19, 89);
+    color: white;
+}
+/* Student Record Section */
+.Record-Section{
+    padding: 20px;
+    align-self: center;
+    color: black;
+    border-radius: 10px;
+}
+#Student-Table{
+    
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;  
+    
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px; 
+}
+h3:hover{
+    transform: scale(1.3);
+}
+th,
+td {
+   
+    padding: 8px;
+    text-align: center;
+    border: 1px solid black;
+    color: black; 
+    
+}
+
+th {
+    background-color: #000000b5;
+    color:black
+}
+/* footer Section */
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    
+}
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.link1:hover{
+    animation: bounce 0.9s ease;
+}
+.link2:hover{
+    animation: bounce 0.9s ease;
+}
+/* Creeated element in tr and td design Section */
+.edit-button{
+    padding: 5px 10PX;
+    font-size: 20px;
+    margin:5px; 
+    background-color: green;  
+}
+.edit-button:hover{
+    background-color:white;
+    color:black;
+}
+.delete-button{
+    padding: 5px 10PX;
+    font-size: 20px;  
+    margin:5px; 
+    background-color: red; 
+}
+.delete-button:hover{
+    background-color:white;
+    color:black;
+}
+tr{
+    
+    color:white;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+/* Scrollbar section */
+#container{  
+   
+    background-color: white;
+    width:750px;
+    height:300px;
+    overflow-y: scroll;
+    overflow-x: scroll;         
+}
+/* Media query Section */
+@media  only screen and (min-width: 1280px) {
+    .Record-Section{
+       position: relative;
+       right:250px;         
+    }
+    #Registration-Section{
+        position: relative;
+        right:250px;
+    }
+    header{
+        position: relative;
+        right:250px;
+    }
+    footer{
+        position: relative;
+        right:250px;
+    }
+
+}
+@media (max-width: 768px) {
+ 
+    #container{  
+   
+        background-color: white;
+        width:550px;
+        height:300px;
+        overflow-y: scroll;
+        overflow-x: scroll;    
+          
+    } 
+
+    
+}
+@media (min-width: 250px) and (max-width: 551px) {
+ 
+    #container{  
+   
+        background-color: white;
+        width:550px;
+        height:300px;
+        overflow-y: scroll;
+        overflow-x: scroll;    
+          
+    } 
+    .Record-Section{
+        padding: 20px;
+        align-self: self-start;
+        color: black;
+        border-radius: 10px;
+    }
+    
+}
+
