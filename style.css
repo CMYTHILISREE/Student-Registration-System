@@ -19,7 +19,7 @@ header {
     color: white;
     text-align: center;
     padding: 4px 0;
-    position: relative;
+   
 }
 h1:hover{
     transform: scale(1.3);
@@ -144,7 +144,7 @@ td {
 
 th {
     background-color: #000000b5;
-    color:black
+    color:black;
 }
 /* footer Section */
 footer{
@@ -218,26 +218,9 @@ tr{
     overflow-y: scroll;
     overflow-x: scroll;         
 }
-/* Media query Section */
-@media  only screen and (min-width: 1280px) {
-    .Record-Section{
-       position: relative;
-       right:250px;         
-    }
-    #Registration-Section{
-        position: relative;
-        right:250px;
-    }
-    header{
-        position: relative;
-        right:250px;
-    }
-    footer{
-        position: relative;
-        right:250px;
-    }
+ /* Media query Section */
 
-}
+
 @media (max-width: 768px) {
  
     #container{  
@@ -267,8 +250,21 @@ tr{
         padding: 20px;
         align-self: self-start;
         color: black;
-        border-radius: 10px;
+        border-radius: 10;
     }
-    
 }
 
+
+
+
+    
+
+
+    
+         
+    
+     
+    
+    
+
+  
